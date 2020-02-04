@@ -11,16 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('about', function () {
-    return view('about');
-});
-Route::get('products', function () {
-    return view('products');
-});
-Route::get('services', function () {
-    return view('services');
-});
+Route::get('/', 'IndexController@index'); 
